@@ -25,6 +25,8 @@ body {
   &__container {
     &::-webkit-scrollbar {
       display: none;
+      width: 100vw;
+      height: 100vh;
     }
 
     &__body {

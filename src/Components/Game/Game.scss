@@ -1,0 +1,30 @@
+@import "../../AppVariables.scss";
+
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  &__background {
+    &-green {
+      background-image: linear-gradient(
+        to right,
+        $color-primary-p1-light,
+        $color-primary-p1-dark
+      );
+    }
+    &-pink {
+      background-image: linear-gradient(
+        to right,
+        $color-primary-p2-light,
+        $color-primary-p2-dark
+      );
+    }
+
+    &-green,
+    &-pink {
+      width: 100vw;
+      height: 100vh;
+    }
+  }
+}

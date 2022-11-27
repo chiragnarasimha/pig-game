@@ -1,0 +1,39 @@
+@import "../../AppVariables.scss";
+.player {
+  // To ensure that the player container spans the whole page
+  border-radius: 2rem;
+  display: flex;
+  height: 50vh;
+  width: 50vw;
+  overflow: hidden;
+  background-color: $color-grey-light-1-low-opacity;
+  box-shadow: $shadow-dark;
+
+  &__player1,
+  &__player2 {
+    width: 25vw;
+    height: 100%;
+    color: $color-grey-dark-3;
+  }
+  &__player1 {
+    //   background-color: $color-black;
+  }
+  &__player2 {
+    //   background-color: $color-grey-light-1;
+  }
+
+  &__background {
+    &__prominent {
+      background-color: $color-grey-light-1-high-opacity;
+    }
+    &__transparent {
+      background-color: $color-grey-light-1-low-opacity;
+    }
+  }
+}
+
+.buttons {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
