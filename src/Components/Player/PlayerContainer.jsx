@@ -1,21 +1,22 @@
 import "./PlayerContainer.scss";
 import React, { useState } from "react";
+import Player from "./Player";
 
-const Player = () => {
+const PlayerContainer = () => {
   const [turn, setTurn] = useState(`p1`);
   const player1Background = turn === `p1` ? `prominent` : `transparent`;
   const player2Background = turn === `p2` ? `prominent` : `transparent`;
   return (
     <>
-      <div className="player">
+      <div className="player-container">
         <div
-          className={`player__player1 player__background__${player1Background}`}
+          className={`player-container__player1 player-container__background__${player1Background}`}
         >
-          TEST
+          <Player />
         </div>
 
         <div
-          className={`player__player2 player__background__${player2Background}`}
+          className={`player-container__player2 player-container__background__${player2Background}`}
         />
       </div>
       <div className="buttons">
@@ -28,4 +29,4 @@ const Player = () => {
   );
 };
 
-export default Player;
+export default PlayerContainer;
