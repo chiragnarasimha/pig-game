@@ -8,6 +8,12 @@
 @mixin flexCenter {
 }
 
+@mixin text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 // **************************** Media Queries related mixins **************************** //
 
 /**

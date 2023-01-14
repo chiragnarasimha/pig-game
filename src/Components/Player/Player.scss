@@ -1,0 +1,26 @@
+@import "../../AppVariables.scss";
+@import "../../Mixins.scss";
+.player {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+
+  padding: 10rem 2rem;
+
+  &__name {
+    @include text-center();
+    flex-basis: 30%;
+  }
+
+  &__total-score {
+    @include text-center();
+    flex-basis: 30%;
+  }
+
+  &__current-score {
+    @include text-center();
+    flex-basis: 40%;
+  }
+}

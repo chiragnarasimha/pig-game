@@ -1,4 +1,5 @@
 @import "../../AppVariables.scss";
+@import "../../Mixins.scss";
 .player-container {
   // To ensure that the player container spans the whole page
   border-radius: 2rem;
@@ -33,7 +34,24 @@
 }
 
 .buttons {
-  position: absolute;
+  @include absCenter();
+  padding: 0rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  height: 50vh;
+  padding: 10rem;
+  &__new_game {
+    @include text-center();
+    flex-basis: 30%;
+  }
+  &__dice {
+    @include text-center();
+    flex-basis: 30%;
+  }
+  &__turn_buttons {
+    @include text-center();
+    flex-direction: column;
+    flex-basis: 40%;
+  }
 }

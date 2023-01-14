@@ -12,18 +12,22 @@ const PlayerContainer = () => {
         <div
           className={`player-container__player1 player-container__background__${player1Background}`}
         >
-          <Player />
+          <Player playerName={`Player 1`} playerScore={20} currentScore={15} />
         </div>
 
         <div
           className={`player-container__player2 player-container__background__${player2Background}`}
-        />
-      </div>
-      <div className="buttons">
-        <div>Test</div>
-        <div>Test</div>
-        <div>Test</div>
-        <div>Test</div>
+        >
+          <Player playerName={`Player 2`} playerScore={20} currentScore={15} />
+        </div>
+        <div className="buttons">
+          <div className="buttons__new_game">Test</div>
+          <div className="buttons__dice">Test</div>
+          <div className="buttons__turn_buttons">
+            <div>Test</div>
+            <div>Test</div>
+          </div>
+        </div>
       </div>
     </>
   );
