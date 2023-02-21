@@ -20,12 +20,14 @@ const PlayerContainer = () => {
         >
           <Player playerName={`Player 2`} playerScore={20} currentScore={15} />
         </div>
-        <div className="buttons">
-          <div className="buttons__new_game">Test</div>
-          <div className="buttons__dice">Test</div>
-          <div className="buttons__turn_buttons">
-            <div>Test</div>
-            <div>Test</div>
+        <div className="player_interaction">
+          <div className="player_interaction__new_game">
+            <button>New Game</button>
+          </div>
+          <div className="player_interaction__dice">Test</div>
+          <div className="player_interaction__turn_buttons">
+            <button>Roll Dice</button>
+            <button>Hold</button>
           </div>
         </div>
       </div>

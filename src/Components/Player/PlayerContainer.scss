@@ -33,7 +33,7 @@
   }
 }
 
-.buttons {
+.player_interaction {
   @include absCenter();
   padding: 0rem;
   display: flex;
@@ -53,5 +53,8 @@
     @include text-center();
     flex-direction: column;
     flex-basis: 40%;
+  }
+
+  &__button {
   }
 }
